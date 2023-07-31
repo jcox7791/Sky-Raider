@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/sky_raiderLanding.css">
+    <!-- javaScript -->
+    <script defer src="/assets/scripts/sky_raiderLanding.js"></script>
+    <!-- ########## DO NOT TOUCH from here down!!! when out will be replaced with a link in the head element ########## -->
+    <!--  bootstrap CSSheet -->
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+    <!-- JQuery -->
+    <script defer src="./jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap  -->
+    <script defer src="./bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <section id="sec_con"></section>
+    <header id="header_con">
+        <p class="title_header">Sky Raider</p>
+    </header>
+    <main id="main_con">
+        <!-- ########## placeholder needs to be replaced ########## -->
+        <img class="img_game" src="/assets/images/game/targets/target_plane.png" alt="sky raider game">
+        <br>
+        <!-- Modal-trigger "Game Controls" -->
+        <button id="controls_btn" class="btn btn-outline-light" type="button" data-bs-toggle="modal"
+            data-bs-target="#game_controls">
+            Game Controls
+        </button>
+        <!-- Modal for "Game Demo" -->
+        <div id="game_controls" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p id="modal_title" class="modal-title">Sky Raider's Controls</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Up = Up Arrow</p>
+                        <p>Down = Down Arrow</p>
+                        <p>Left = Left Arrow</p>
+                        <p>Right = Right Arrow</p>
+                        <p>Fire = Fire Arrow</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal-trigger "Play Game" -->
+        <button id="game_btn" class="btn btn-outline-warning" type="button" data-bs-toggle="modal"
+            data-bs-target="#play_game">
+            Play Game
+        </button>
+        </div>
+        <!-- Modal for "Game Demo" -->
+        <div id="play_game" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p id="modal_title" class="modal-title">Sky Raider's</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="submit">
+                            <!-- Place holder for javascript message. -->
+                            <div style="text-align:center;">
+                                <p id="message" style="color: red;"></p>
+                            </div>
+                            <label for="user_name">User Name:</label>
+                            <input id="playerName" class="form-control" type="text" placeholder="james007.5"
+                                name="user_name" required>
+                            <div class="modal-footer">
+                                <button id="playGame" type="button" class="btn btn-outline-warning">
+                                    Play Demo
+                                </button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer id="footer_con">
+        <div class="div_f">       
+            <p class="creator">Creative Cyber Designs&copy;2022</p>
+            <a href="#" target="_blank">
+                <p class="terms">Terms of Service</p>
+            </a>
+        </div>   
+    </footer>
+</body>
+
+</html>

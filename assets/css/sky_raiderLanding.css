@@ -1,0 +1,83 @@
+body {
+  background-image: linear-gradient(to right, green, whitesmoke, orange);
+  display: grid;
+  grid-template-areas:
+    "nav nav nav nav nav nav"
+    "section header header header header aside"
+    "section main main main main aside"
+    "footer footer footer footer footer footer";
+}
+#nav_con {
+  grid-area: nav;
+  display: inline-flex;
+  background-color: gainsboro;
+  padding: 5px;
+}
+.img_nav {
+  height: 75px;
+  width: 150px;
+}
+.nav_links {
+  margin-top: 25px;
+}
+a:link {
+  margin-left: 10px;
+  text-decoration: none;
+}
+#header_con {
+  grid-area: header;
+  text-align: center;
+  margin: 5px;
+}
+.title_header {
+  font-family: segoe script;
+  font-size: 85px;
+  text-shadow: 5px 5px 8px rgb(255, 60, 0);
+}
+#main_con {
+  grid-area: main;
+  text-align: center;
+  border-style: double;
+  border-width: 3px;
+  background-color: rgba(0, 0, 0, 0.596);
+  margin-top: -25px;
+  /* margin-right: 250px;
+  margin-left: 250px; */
+}
+.img_game {
+  height: 550px;
+  margin-top: 15px;
+}
+#controls_btn,
+#game_btn {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+#modal_title {
+  font-size: 35px;
+  font-family: segoe script;
+  text-shadow: 5px 5px 8px rgb(255, 60, 0);
+}
+#aside_con {
+  grid-area: aside;
+  margin: 5px;
+}
+#sec_con {
+  grid-area: section;
+  margin: 5px;
+}
+footer {
+  background-color: rgba(220, 220, 220, 0.404);
+  bottom: 0;
+  min-width: 100%;
+  padding: 5px;
+  position: fixed;
+  text-align: center;
+}
+.div_f {
+  margin-top: 10px;
+}
+.terms {
+  margin-top: -40px;
+}

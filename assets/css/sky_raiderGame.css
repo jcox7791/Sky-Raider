@@ -1,0 +1,92 @@
+body {
+  /* overflow-x: hidden; */
+  display: grid;
+  grid-template-areas:
+    "controls name name score score footer"
+    "controls board board board board footer"
+    "controls board board board board footer";
+}
+
+#sec_name {
+  grid-area: name;
+  display: inline-flex;
+  background-color: aqua;
+}
+.name_score {
+  font-size: 25px;
+  margin-left: 25px;
+}
+#sec_score {
+  grid-area: score;
+  display: inline-flex;
+  background-color: aqua;
+}
+#sec_controls {
+  grid-area: controls;
+  background-color: black;
+  text-align: center;
+}
+#volume_con,
+#pause_con,
+#endGame_con {
+  margin-top: 100px;
+}
+#volume_btn{
+  margin-right: 15px;
+}
+#modal_title {
+  color: black;
+  font-size: 35px;
+  font-family: segoe script;
+  text-shadow: 5px 5px 8px rgb(255, 60, 0);
+}
+#canvas_con {
+  grid-area: board;
+  background-color: aqua;
+  width: 1600px;
+  height: 883px;
+}
+
+/* .bullet {
+  position: relative;
+  font-size: 20px;
+  color: red;
+} */
+
+footer {
+  color: whitesmoke;
+  grid-area: footer;
+  background-color: black;
+  text-align: center;
+  display: grid;
+  grid-template-areas:
+    "social"
+    "contact"
+    "terms";
+}
+#social_media {
+  grid-area: social;
+  margin-top: 100px;
+  /* margin-left: 10px; */
+}
+.footer_icons {
+  margin-top: -30px;
+  height: 35px;
+}
+#creator_terms {
+  grid-area: terms;
+  text-align: center;
+  /* margin-top: 100px; */
+}
+.terms {
+  margin-top: -25px;
+}
+#contact_info {
+  grid-area: contact;
+  text-align: center;
+  /* margin-top: 100px; */
+}
+.contacts {
+  margin-top: -25px;
+  margin-left: 20px;
+}
